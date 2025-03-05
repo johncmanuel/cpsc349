@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
   { name: "Blog", path: "/blog" },
 ];
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
   return (
     <nav>
       <ul>
