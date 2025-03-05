@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 export default function ProjectsLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return <section>{children}</section>
+  return <section>{children}</section>;
 }
