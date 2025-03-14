@@ -10,7 +10,6 @@ const navLinks: NavLink[] = [
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
   { name: "Projects", path: "/projects" },
-  { name: "Blog", path: "/blog" },
 ];
 
 export const Navbar: React.FC = () => {
