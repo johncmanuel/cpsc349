@@ -2,7 +2,7 @@
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="mt-16 border-t border-zinc-800 pt-8">
+    <footer className="mt-16 border-t border-zinc-800 py-8">
       <div className="flex items-center justify-between">
         <div className="font-mono text-sm text-zinc-500">
           © {new Date().getFullYear()} John Carlo Manuel. All rights reserved.
