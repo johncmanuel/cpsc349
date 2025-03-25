@@ -1,10 +1,10 @@
 // import personal info from OG website
 
 export const LINKS =
-  "https://github.com/johncmanuel/johncarlomanuel.com/blob/master/src/lib/public/links/links.json";
+  "https://raw.githubusercontent.com/johncmanuel/johncarlomanuel.com/refs/heads/master/src/lib/public/links/links.json";
 
 export const SELF =
-  "https://github.com/johncmanuel/johncarlomanuel.com/blob/master/src/lib/public/self/self.json";
+  "https://raw.githubusercontent.com/johncmanuel/johncarlomanuel.com/refs/heads/master/src/lib/public/self/self.json";
 
 export const getLinksData = async () => {
   try {
@@ -13,7 +13,6 @@ export const getLinksData = async () => {
       throw new Error("Failed to fetch links data");
     }
     const data = await res.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.error(error);

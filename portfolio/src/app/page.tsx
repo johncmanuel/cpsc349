@@ -6,8 +6,12 @@ export default async function Home() {
   const links: any = await getLinksData();
   if (!links) console.error("Failed to render links data");
 
+  const resumeUrl: string = links["resume"];
+  // const githubUrl: string = links["github"];
+  // const linkedinUrl: string = links["linkedin"];
+
   return (
-    <main className="min-h-screen bg-zinc-900 text-white">
+    <main className="min-h-screen text-white">
       <div className="container mx-auto max-w-4xl px-4 py-16">
         <div className="relative mb-12 flex w-full justify-center">
           <div className="relative">
@@ -63,7 +67,7 @@ export default async function Home() {
                   </span>
                 </Link>
                 <Link
-                  href="/"
+                  href={resumeUrl}
                   target="_blank"
                   className="group inline-flex items-center border border-zinc-700 bg-zinc-800 px-4 py-2 text-zinc-200 transition-colors duration-200 hover:bg-zinc-700">
                   <span>Resume</span>
