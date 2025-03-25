@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getLinksData } from "@/lib/info";
 
-export default function Home() {
+export default async function Home() {
+  const links: any = await getLinksData();
+  if (!links) console.error("Failed to render links data");
+
   return (
     <main className="min-h-screen bg-zinc-900 text-white">
       <div className="container mx-auto max-w-4xl px-4 py-16">
@@ -14,6 +18,7 @@ export default function Home() {
                 alt="Profile Photo"
                 width={400}
                 height={300}
+                priority
                 className="h-48 w-full max-w-3xl origin-center transform object-cover transition-all duration-500 md:h-64"
               />
             </div>
@@ -48,11 +53,20 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex justify-center pt-4">
+              <div className="flex justify-center gap-x-6 pt-4">
                 <Link
                   href="/about"
                   className="group inline-flex items-center border border-zinc-700 bg-zinc-800 px-4 py-2 text-zinc-200 transition-colors duration-200 hover:bg-zinc-700">
                   <span>About</span>
+                  <span className="ml-2 text-zinc-400 transition-transform duration-200 group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  target="_blank"
+                  className="group inline-flex items-center border border-zinc-700 bg-zinc-800 px-4 py-2 text-zinc-200 transition-colors duration-200 hover:bg-zinc-700">
+                  <span>Resume</span>
                   <span className="ml-2 text-zinc-400 transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>
