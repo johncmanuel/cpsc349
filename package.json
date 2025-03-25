@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "3.5.3"
+  },
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
+}
