@@ -30,8 +30,10 @@ export default async function Home() {
         </div>
 
         <div className="relative mb-16">
-          <div className="absolute -left-6 -top-6 h-12 w-12 border-l-2 border-t-2 border-zinc-500 opacity-70"></div>
-          <div className="absolute -bottom-6 -right-6 h-12 w-12 border-b-2 border-r-2 border-zinc-500 opacity-70"></div>
+          <div className="hidden md:block">
+            <div className="absolute -left-6 -top-6 h-12 w-12 border-l-2 border-t-2 border-zinc-500 opacity-70"></div>
+            <div className="absolute -bottom-6 -right-6 h-12 w-12 border-b-2 border-r-2 border-zinc-500 opacity-70"></div>
+          </div>
 
           <div className="py-8">
             <div className="space-y-4">
