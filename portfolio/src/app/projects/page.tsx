@@ -1,3 +1,5 @@
+import ProjectsPage from "../components/ProjectsPage";
+
 export default function Projects() {
-  return <div>Projects</div>;
+  return <ProjectsPage />;
 }
