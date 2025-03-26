@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getLinksData, getSelfData } from "@/lib/info";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import EmbedLink from "./EmbedLink";
 
 export default async function AboutPage() {
   const links: any = await getLinksData();
@@ -47,8 +48,39 @@ export default async function AboutPage() {
               <span className="mr-2 text-zinc-400">&#62;</span>
               BACKGROUND
             </h2>
-            <div className="prose prose-invert max-w-none">
-              <p>blah blah blah, fill me later</p>
+            <div className="prose prose-invert max-w-none space-y-2">
+              <p>
+                I first started self-teaching myself programming since high
+                school and built a few, small projects such as a calculator for
+                trigonometry class using C++ and the first version of my
+                personal website using HTML, CSS, and JS.
+              </p>
+              <p>
+                After high school, I attended Skyline College and studied there
+                for 3 years before transferring to Cal State Fullerton. During
+                my time there,{" "}
+                <EmbedLink href="https://www.skycs.club/">
+                  I co-founded the computer science club
+                </EmbedLink>
+                , taught myself more web development and other computer science
+                topics,{" "}
+                <EmbedLink href="https://devpost.com/software/unipals-l8jd7z">
+                  attended a virtual hackathon
+                </EmbedLink>
+                ,{" "}
+                <EmbedLink href="http://sfsu-miclab.org/">
+                  performed research in computer vision at SFSU
+                </EmbedLink>
+                ,{" "}
+                <EmbedLink href="https://registers.johncarlomanuel.com/research-in-nexo/">
+                  contributed to nEXO
+                </EmbedLink>
+                , and did part-time tutoring for CS classes.
+              </p>
+              <p>
+                I continued my studies at Cal State Fullerton and specialized in
+                web development and game development.
+              </p>
             </div>
           </div>
         </section>
@@ -103,15 +135,23 @@ export default async function AboutPage() {
           </h2>
 
           <div className="border border-zinc-700 bg-zinc-800/30 p-6">
-            <div className="prose prose-invert max-w-none">
-              <p>blah blah blah, fill me later</p>
+            <div className="prose prose-invert max-w-none space-y-2">
+              <p>
+                Aside from software engineering, I like to play games, write
+                fiction and anything that comes to mind for my{" "}
+                <EmbedLink href="https://registers.johncarlomanuel.com/">
+                  blog site
+                </EmbedLink>
+                , and read interesting articles, books, and even manga (I'll
+                also watch anime adaptations if they exist)!
+              </p>
             </div>
           </div>
         </section>
 
         <section id="resume" className="flex justify-center">
           <div className="w-full max-w-md border border-zinc-700 bg-zinc-800/50 p-8 text-center">
-            <h2 className="mb-4 font-mono text-xl">DOWNLOAD RESUME</h2>
+            <h2 className="mb-4 font-mono text-xl">VIEW RESUME</h2>
             <p className="mb-6 text-zinc-400">
               Check out my resume down below!{" "}
             </p>
