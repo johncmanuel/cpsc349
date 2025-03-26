@@ -56,13 +56,21 @@ export const skillCategories: SkillCategory[] = [
   {
     name: "DevOps & Programming Tools",
     icon: <FaInfinity className="h-5 w-5" />,
-    skills: ["Git", "GitHub", "Docker", "Vercel"],
+    skills: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Vercel",
+      "Cloudflare",
+      "Linux",
+      "Neovim"
+    ],
     type: "technical"
   },
   {
     name: "Game Development",
     icon: <FaGamepad className="h-5 w-5" />,
-    skills: ["Unity", "Phaser.js"],
+    skills: ["Unity", "Phaser.js", "Colyseus"],
     type: "technical"
   },
 
