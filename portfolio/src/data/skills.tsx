@@ -62,7 +62,7 @@ export const skillCategories: SkillCategory[] = [
   {
     name: "Game Development",
     icon: <FaGamepad className="h-5 w-5" />,
-    skills: ["Unity", "C#", "Phaser.js"],
+    skills: ["Unity", "Phaser.js"],
     type: "technical"
   },
 
