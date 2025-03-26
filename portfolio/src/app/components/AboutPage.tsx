@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getLinksData, getSelfData } from "@/lib/info";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 import EmbedLink from "./EmbedLink";
 
 export default async function AboutPage() {
@@ -9,7 +9,6 @@ export default async function AboutPage() {
   if (!links || !self) console.error("Failed to render links or self data");
 
   const resume = links.resume;
-  const skills = self.skills;
 
   const education = [
     {
@@ -109,25 +108,27 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        <section id="skills">
-          <h2 className="mb-4 flex items-center font-mono text-xl">
-            <span className="mr-2 text-zinc-400">&#62;</span>
-            SKILLS
-          </h2>
-          <div className="border border-zinc-700 bg-zinc-800/30 p-6">
-            <div className="flex flex-wrap gap-2">
-              {/* @ts-ignore */}
-              {skills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="border border-zinc-700 bg-zinc-800 px-3 py-1.5 font-mono text-sm text-zinc-300">
-                  {skill}
-                </div>
-              ))}
-            </div>
-          </div>{" "}
+        <section id="skills" className="flex justify-center">
+          <div className="w-full max-w-md border border-zinc-700 bg-zinc-800/30 p-6 text-center">
+            <h2 className="mb-4 flex items-center justify-center font-mono text-xl">
+              <span className="mr-2 text-zinc-400">&#62;</span>
+              SKILLS
+            </h2>
+            <p className="mb-6 text-zinc-300">
+              Explore my technical and non-technical skills, from programming
+              languages and frameworks to project management and communication.
+            </p>
+            <Link
+              href="/skills"
+              className="group inline-flex items-center border border-zinc-600 bg-zinc-700 px-6 py-3 text-zinc-200 transition-colors duration-200 hover:bg-zinc-600">
+              <FaCode className="mr-2 h-5 w-5" />
+              <span>View Skills</span>
+              <span className="ml-2 text-zinc-400 transition-transform duration-200 group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
+          </div>
         </section>
-
         <section>
           <h2 className="mb-4 flex items-center font-mono text-xl">
             <span className="mr-2 text-zinc-400">&#62;</span>
