@@ -115,8 +115,7 @@ export default async function AboutPage() {
               SKILLS
             </h2>
             <p className="mb-6 text-zinc-300">
-              Explore my technical and non-technical skills, from programming
-              languages and frameworks to project management and communication.
+              Explore my current skillset, both technical and non-technical{" "}
             </p>
             <Link
               href="/skills"
