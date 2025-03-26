@@ -1,4 +1,4 @@
-// import Link from "next/link";
+import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
@@ -7,7 +7,13 @@ export const Footer: React.FC = () => {
         <div className="font-mono text-sm text-zinc-500">
           © {new Date().getFullYear()} John Carlo Manuel. All rights reserved.
         </div>
-        {/* todo: put socials here <div className="flex space-x-4"></div> */}
+        <div className="flex space-x-4">
+          <Link
+            href="https://github.com/johncmanuel/cpsc349"
+            className="text-zinc-400 transition-colors duration-200 hover:text-white">
+            Source Code
+          </Link>
+        </div>
       </div>
     </footer>
   );
