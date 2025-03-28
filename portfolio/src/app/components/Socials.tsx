@@ -57,8 +57,6 @@ export default async function Socials() {
           </Link>
         ))}
       </div>
-
-      <div className="my-6 h-px w-full bg-zinc-800"></div>
     </section>
   );
 }

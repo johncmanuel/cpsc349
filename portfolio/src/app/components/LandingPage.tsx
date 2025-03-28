@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getLinksData } from "@/lib/info";
+import Socials from "./Socials";
 
 export default async function LandingPage() {
   const links: any = await getLinksData();
@@ -79,6 +80,10 @@ export default async function LandingPage() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="relative mb-12">
+          <Socials />
         </div>
       </div>
     </main>
