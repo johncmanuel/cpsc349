@@ -1,5 +1,6 @@
 import { getSelfData } from "@/lib/info";
 import ProjectCard from "./ProjectCard";
+import MainHeading from "./MainHeading";
 
 export type Project = {
   name: string;
@@ -21,10 +22,7 @@ export default async function ProjectsPage() {
     <div className="container mx-auto max-w-4xl px-4 py-12">
       <div className="space-y-12">
         <div className="relative">
-          <h1 className="mb-2 text-center font-mono text-4xl font-bold">
-            MY PROJECTS
-          </h1>
-          <div className="my-4 h-px w-full bg-zinc-700"></div>
+          <MainHeading headingText="Projects" />
         </div>
 
         <section>

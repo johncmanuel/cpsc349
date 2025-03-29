@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getLinksData, getSelfData } from "@/lib/info";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 import EmbedLink from "./EmbedLink";
+import Subheading from "./Subheading";
+import MainHeading from "./MainHeading";
 
 export default async function AboutPage() {
   const links: any = await getLinksData();
@@ -31,22 +33,15 @@ export default async function AboutPage() {
     <div className="container mx-auto max-w-4xl px-4 py-12">
       <div className="space-y-12">
         <div className="relative">
-          <h1 className="mb-2 text-center font-mono text-4xl font-bold">
-            ABOUT ME
-          </h1>
-          <div className="my-4 h-px w-full bg-zinc-700"></div>
+          <MainHeading headingText="About Me" />
         </div>
-
-        <section className="relative">
+        <Subheading headingText="Background" />
+        <section className="relative md:mt-8">
           <div className="hidden md:block">
             <div className="absolute -left-4 -top-4 h-8 w-8 border-l-2 border-t-2 border-zinc-500 opacity-70"></div>
             <div className="absolute -bottom-4 -right-4 h-8 w-8 border-b-2 border-r-2 border-zinc-500 opacity-70"></div>
           </div>
           <div className="border border-zinc-700 bg-zinc-800/30 p-6">
-            <h2 className="mb-4 flex items-center font-mono text-xl">
-              <span className="mr-2 text-zinc-400">&#62;</span>
-              BACKGROUND
-            </h2>
             <div className="prose prose-invert max-w-none space-y-2">
               <p>
                 I first started self-teaching myself programming since high
@@ -85,11 +80,7 @@ export default async function AboutPage() {
         </section>
 
         <section id="education">
-          <h2 className="mb-4 flex items-center font-mono text-xl">
-            <span className="mr-2 text-zinc-400">&#62;</span>
-            EDUCATION
-          </h2>
-
+          <Subheading headingText="Education" />
           <div className="space-y-4">
             {education.map((edu, index) => (
               <div
@@ -110,10 +101,10 @@ export default async function AboutPage() {
 
         <section id="skills" className="flex justify-center">
           <div className="w-full max-w-md border border-zinc-700 bg-zinc-800/30 p-6 text-center">
-            <h2 className="mb-4 flex items-center justify-center font-mono text-xl">
-              <span className="mr-2 text-zinc-400">&#62;</span>
-              SKILLS
-            </h2>
+            <Subheading
+              headingText="Skills"
+              additionalClassNames="justify-center"
+            />
             <p className="mb-6 text-zinc-300">
               Explore my current skillset, both technical and non-technical{" "}
             </p>
@@ -129,11 +120,7 @@ export default async function AboutPage() {
           </div>
         </section>
         <section>
-          <h2 className="mb-4 flex items-center font-mono text-xl">
-            <span className="mr-2 text-zinc-400">&#62;</span>
-            INTERESTS
-          </h2>
-
+          <Subheading headingText="Interests" />
           <div className="border border-zinc-700 bg-zinc-800/30 p-6">
             <div className="prose prose-invert max-w-none space-y-2">
               <p>
