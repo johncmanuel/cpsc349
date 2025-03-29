@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaExternalLinkAlt, FaChevronUp, FaChevronDown } from "react-icons/fa";
 import Image from "next/image";
 
-// TODO: fill in details for outcome and challenges for each project
 export default function ProjectCard({ project }: { project: Project }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
