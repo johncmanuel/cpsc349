@@ -29,11 +29,6 @@ export default async function LandingPage() {
         </div>
 
         <div className="relative mb-16">
-          <div className="hidden md:block">
-            <div className="absolute -left-6 -top-6 h-12 w-12 border-l-2 border-t-2 border-zinc-500 opacity-70"></div>
-            <div className="absolute -bottom-6 -right-6 h-12 w-12 border-b-2 border-r-2 border-zinc-500 opacity-70"></div>
-          </div>
-
           <div className="py-8">
             <div className="space-y-4">
               <h1 className="text-center font-mono text-4xl font-bold tracking-tight text-white md:text-5xl">
