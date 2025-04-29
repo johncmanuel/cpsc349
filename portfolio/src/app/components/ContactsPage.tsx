@@ -12,9 +12,6 @@ export default function ContactsPage() {
 
           <section className="relative">
             <div className="border border-zinc-700 bg-zinc-800/30 p-6">
-              <h2 className="mb-4 flex items-center font-mono text-xl">
-                SEND MESSAGE
-              </h2>
               <ContactForm />
             </div>
           </section>
