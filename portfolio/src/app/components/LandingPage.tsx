@@ -48,7 +48,7 @@ export default async function LandingPage() {
                   State University, Fullerton. I'm interested in full-stack
                   development, game development, and distributed systems.
                   Outside of engineering, I enjoy diving into creative endeavors
-                  such as writing and worldbuilding. I like to play plays
+                  such as writing and worldbuilding. I like to play
                   (MMO)RPGs and narrative-driven games.
                 </p>
               </div>
