@@ -16,7 +16,7 @@ const ExternalLinkButton = ({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center border border-zinc-600 bg-zinc-700 px-6 py-3 text-zinc-200 transition-colors duration-200 hover:bg-zinc-600 ${className}`}
+      className={`group inline-flex items-center border border-zinc-600 bg-zinc-700 px-6 py-3 text-zinc-200 transition-colors duration-200 hover:bg-zinc-600`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={text}>
