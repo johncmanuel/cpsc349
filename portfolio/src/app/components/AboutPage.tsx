@@ -37,10 +37,6 @@ export default async function AboutPage() {
         </div>
         <Subheading headingText="Background" />
         <section className="relative md:mt-8">
-          <div className="hidden md:block">
-            <div className="absolute -left-4 -top-4 h-8 w-8 border-l-2 border-t-2 border-zinc-500 opacity-70"></div>
-            <div className="absolute -bottom-4 -right-4 h-8 w-8 border-b-2 border-r-2 border-zinc-500 opacity-70"></div>
-          </div>
           <div className="border border-zinc-700 bg-zinc-800/30 p-6">
             <div className="prose prose-invert max-w-none space-y-2">
               <p>
@@ -50,9 +46,15 @@ export default async function AboutPage() {
                 personal website using HTML, CSS, and JS.
               </p>
               <p>
-                After high school, I attended Skyline College and studied there
-                for 3 years before transferring to Cal State Fullerton. During
-                my time there,{" "}
+                After high school, I attended{" "}
+                <EmbedLink href="https://skylinecollege.edu/">
+                  Skyline College
+                </EmbedLink>{" "}
+                and studied there for 3 years before transferring to{" "}
+                <EmbedLink href="https://www.fullerton.edu/">
+                  Cal State Fullerton
+                </EmbedLink>
+                . During my time there,{" "}
                 <EmbedLink href="https://www.skycs.club/">
                   I co-founded the computer science club
                 </EmbedLink>
@@ -69,11 +71,25 @@ export default async function AboutPage() {
                 <EmbedLink href="https://registers.johncarlomanuel.com/research-in-nexo/">
                   contributed to nEXO
                 </EmbedLink>
-                , and did part-time tutoring for CS classes.
+                , and did{" "}
+                <EmbedLink href="https://skylinecollege.edu/stemcenter/index.php">
+                  part-time tutoring
+                </EmbedLink>{" "}
+                for CS classes.
               </p>
               <p>
                 I continued my studies at Cal State Fullerton and specialized in
-                web development and game development.
+                web development and game development. I became involved in{" "}
+                <EmbedLink href="https://acmcsuf.com/">ACM</EmbedLink>, where I
+                helped contribute to{" "}
+                <EmbedLink href="https://github.com/acmcsufoss/">
+                  open source
+                </EmbedLink>{" "}
+                and{" "}
+                <EmbedLink href="https://fullyhacks.acmcsuf.com/">
+                  FullyHacks
+                </EmbedLink>{" "}
+                as a web developer.
               </p>
             </div>
           </div>
