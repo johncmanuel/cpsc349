@@ -84,12 +84,13 @@ export default async function AboutPage() {
                 helped contribute to{" "}
                 <EmbedLink href="https://github.com/acmcsufoss/">
                   open source
-                </EmbedLink>{" "}
-                and{" "}
+                </EmbedLink>
+                . I participated in{" "}
                 <EmbedLink href="https://fullyhacks.acmcsuf.com/">
                   FullyHacks
                 </EmbedLink>{" "}
-                as a web developer.
+                in 2024, a student-ran hackathon, and later contributed as a web
+                developer in 2025.
               </p>
             </div>
           </div>
