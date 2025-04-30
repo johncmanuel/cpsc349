@@ -2,11 +2,11 @@
 
 ## Setup
 
-Install [Node.js](https://nodejs.org/en/download).
+Install [Node.js](https://nodejs.org/en/download). Alternatively, you can use [devbox](https://www.jetify.com/devbox) to install Node.js and other dependencies in a isolated environment without interfering with the rest of your system packages. Remember to enter the shell with `devbox shell` after cloning the repository.
 
 If you haven't already, set up [Git](https://git-scm.com/downloads) on your computer.
 
-Then, clone this repository. Keep track of where you cloned it!:
+Then, clone this repository. Keep track of where you cloned it!
 
 ```bash
 # https
